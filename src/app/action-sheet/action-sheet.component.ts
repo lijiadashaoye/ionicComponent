@@ -1,14 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { ActionSheetController } from '@ionic/angular';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import {
+  ActionSheetController
+} from '@ionic/angular';
 @Component({
   selector: 'app-action-sheet',
   templateUrl: './action-sheet.component.html',
   styleUrls: ['./action-sheet.component.scss']
 })
-export class ActionSheetComponent {
+export class ActionSheetComponent implements OnInit {
   text: string;
-  constructor(public actionSheetController: ActionSheetController) {
-    window.addEventListener('ionActionSheetDidDismiss', function (e) { console.log('didDismiss', e) })
+  constructor(public actionSheetController: ActionSheetController) {}
+  ngOnInit(): void {
+    window.addEventListener('ionActionSheetDidDismiss', function (e) {
+      console.log('didDismiss', e)
+    })
   }
   async presentBasic() {
     const actionSheet = await this.actionSheetController.create({
@@ -113,8 +121,7 @@ export class ActionSheetComponent {
   }
   async presentScroll() {
     const actionSheetElement = await this.actionSheetController.create({
-      buttons: [
-        {
+      buttons: [{
           text: 'Add Reaction',
           handler: () => {
             this.text = 'Add Reaction clicked';
@@ -230,8 +237,7 @@ export class ActionSheetComponent {
   }
   async presentScrollNoCancel() {
     const actionSheetElement = await this.actionSheetController.create({
-      buttons: [
-        {
+      buttons: [{
           text: 'Add Reaction',
           handler: () => {
             this.text = 'Add Reaction clicked';
@@ -346,25 +352,22 @@ export class ActionSheetComponent {
     });
     await actionSheetElement.present();
   }
-  async  presentCancelOnly() {
+  async presentCancelOnly() {
     const actionSheetElement = await this.actionSheetController.create({
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel', // will always sort to be on the bottom
-          handler: () => {
-            this.text = 'Cancel clicked';
-          }
+      buttons: [{
+        text: 'Cancel',
+        role: 'cancel', // will always sort to be on the bottom
+        handler: () => {
+          this.text = 'Cancel clicked';
         }
-      ]
+      }]
     });
     await actionSheetElement.present();
   }
   async presentWithCssClass() {
     const actionSheetElement = await this.actionSheetController.create({
       header: "自定义css需要写到global",
-      buttons: [
-        {
+      buttons: [{
           text: 'Test',
           role: 'test',
           cssClass: 'selfCss2',
@@ -384,24 +387,23 @@ export class ActionSheetComponent {
     await actionSheetElement.present();
   }
 
-  async  withEvent() {
+  async withEvent() {
     const actionSheetElement = await this.actionSheetController.create({
       keyboardClose: true,
       backdropDismiss: false,
-      buttons: [
-        {
-          text: 'withEvent',
-          handler: async () => {
-            this.text = 'Cancel clicked';
-            function kk() {     // 需要执行的也可以这样
-              console.log(9)
-               actionSheetElement.dismiss();
-            }
-            await kk()
-            return false;
+      buttons: [{
+        text: 'withEvent',
+        handler: async () => {
+          this.text = 'Cancel clicked';
+
+          function kk() { // 需要执行的也可以这样
+            console.log(9)
+            actionSheetElement.dismiss();
           }
+          await kk()
+          return false;
         }
-      ]
+      }]
     })
     await actionSheetElement.present()
   }
