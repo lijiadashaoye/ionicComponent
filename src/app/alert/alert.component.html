@@ -9,8 +9,18 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <p>
-    alert works!
-  </p>
+  <ion-button expand="block" (click)="base()">基本的</ion-button>
+  <ion-button expand="block" (click)="presentAlertLongMessage()">长文本提示</ion-button>
+  <ion-button expand="block" (click)="presentAlertMultipleButtons()">多按钮</ion-button>
 
+  <ion-button expand="block" (click)="presentAlertNoMessage()">简短提示</ion-button>
+
+  <ion-button expand="block" (click)="presentAlertConfirm()">确认框</ion-button>
+
+  <ion-button expand="block" (click)="presentAlertPrompt()">信息输入弹框</ion-button>
+
+  <ion-button expand="block" (click)="presentAlertRadio()">单选弹框</ion-button>
+
+  <ion-button expand="block" (click)="presentAlertCheckbox()">多选弹框</ion-button>
+  <ion-button expand="block" (click)="presentWithCssClass()">使用自定义全局css</ion-button>
 </ion-content>
