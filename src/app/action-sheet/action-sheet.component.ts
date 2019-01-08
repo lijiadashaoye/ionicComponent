@@ -14,9 +14,9 @@ export class ActionSheetComponent implements OnInit {
   text: string;
   constructor(public actionSheetController: ActionSheetController) {}
   ngOnInit(): void {
-    window.addEventListener('ionActionSheetDidDismiss', function (e) {
-      console.log('didDismiss', e)
-    })
+    // window.addEventListener('ionActionSheetDidDismiss', function (e) {
+    //   console.log('didDismiss', e)
+    // })
   }
   async presentBasic() {
     const actionSheet = await this.actionSheetController.create({
@@ -398,7 +398,7 @@ export class ActionSheetComponent implements OnInit {
 
           function kk() { // 需要执行的也可以这样
             console.log(9)
-            actionSheetElement.dismiss();
+            actionSheetElement.dismiss();  // 执行关闭弹框
           }
           await kk()
           return false;
