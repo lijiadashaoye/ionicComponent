@@ -14,6 +14,7 @@ import { AlertComponent } from './alert/alert.component';
 import { SomeComponentComponent } from './some-component/some-component.component';
 import { CardComponent } from './card/card.component';
 import { CheckBoxComponent } from './check-box/check-box.component';
+import { DatetimeComponent } from './datetime/datetime.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CheckBoxComponent } from './check-box/check-box.component';
     SomeComponentComponent,
     CardComponent,
     CheckBoxComponent,
+    DatetimeComponent,
     
   ],
   entryComponents: [],

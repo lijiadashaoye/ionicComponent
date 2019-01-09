@@ -8,9 +8,10 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-
-  <ion-content id="content" fullscreen>
+  <ion-content 
+  fullscreen="true"
+  scrollEvents="true"
+   (ionScroll)="ionscroll($event)">
     <ion-item>
       <ion-label>Default</ion-label>
       <ion-checkbox slot="end" checked></ion-checkbox>
@@ -77,5 +78,3 @@
       </ion-item>
 
   </ion-content>
-
-</ion-content>

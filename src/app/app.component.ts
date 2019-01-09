@@ -34,6 +34,11 @@ export class AppComponent {
       title: 'checkBox',
       url: '/check-box',
       icon: 'star'
+    },{
+      title: 'datetime',
+      url: '/datetime',
+      icon: 'star'
+      
     }
   ];
 
