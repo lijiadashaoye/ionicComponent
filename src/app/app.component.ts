@@ -13,12 +13,27 @@ export class AppComponent {
     {
       title: 'ActionSheet',
       url: '/actionSheet',
-      icon: 'list'
+      icon: 'star'
     },
     {
       title: 'Alert',
       url: '/alert',
-      icon: 'list'
+      icon: 'star'
+    },
+    {
+      title: 'someComponent',
+      url: '/some-component',
+      icon: 'star'
+    },
+    {
+      title: 'card',
+      url: '/card',
+      icon: 'star'
+    },
+    {
+      title: 'checkBox',
+      url: '/check-box',
+      icon: 'star'
     }
   ];
 

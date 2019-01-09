@@ -407,6 +407,4 @@ export class ActionSheetComponent implements OnInit {
     })
     await actionSheetElement.present()
   }
-
-
 }

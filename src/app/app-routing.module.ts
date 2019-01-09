@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ActionSheetComponent } from './action-sheet/action-sheet.component';
 import { AlertComponent } from './alert/alert.component';
+import { SomeComponentComponent } from './some-component/some-component.component';
+import { CardComponent } from './card/card.component';
+import { CheckBoxComponent } from './check-box/check-box.component';
 
 const routes: Routes = [
   {
@@ -17,6 +20,16 @@ const routes: Routes = [
   {
     path: 'alert',
     component: AlertComponent
+  },
+  {
+    path: 'some-component',
+    component: SomeComponentComponent
+  },{
+    path:'card',
+    component:CardComponent
+  },{
+    path:'check-box',
+    component:CheckBoxComponent
   }
 ];
 
