@@ -15,6 +15,7 @@ import { SomeComponentComponent } from './some-component/some-component.componen
 import { CardComponent } from './card/card.component';
 import { CheckBoxComponent } from './check-box/check-box.component';
 import { DatetimeComponent } from './datetime/datetime.component';
+import { WanggeComponent } from './wangge/wangge.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DatetimeComponent } from './datetime/datetime.component';
     CardComponent,
     CheckBoxComponent,
     DatetimeComponent,
+    WanggeComponent,
     
   ],
   entryComponents: [],

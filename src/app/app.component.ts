@@ -38,7 +38,10 @@ export class AppComponent {
       title: 'datetime',
       url: '/datetime',
       icon: 'star'
-      
+    },{
+      title: 'wangge',
+      url: '/wangge',
+      icon: 'star'
     }
   ];
 

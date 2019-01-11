@@ -7,6 +7,7 @@ import { SomeComponentComponent } from './some-component/some-component.componen
 import { CardComponent } from './card/card.component';
 import { CheckBoxComponent } from './check-box/check-box.component';
 import { DatetimeComponent } from './datetime/datetime.component';
+import { WanggeComponent } from './wangge/wangge.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'datetime',
     component: DatetimeComponent
+  },
+  {
+    path: 'wangge',
+    component: WanggeComponent
   },
 ];
 
