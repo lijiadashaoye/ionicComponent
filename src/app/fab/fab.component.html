@@ -1,0 +1,122 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      fab
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="clickMainFAB(kk)">切换</ion-button>
+  
+  <ion-fab vertical="top" #kk horizontal="end" edge="false" id="fab1" slot="fixed">
+    <ion-fab-button size="small" class="e2eFabTopRight">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list>
+      <ion-fab-button class="ionFab" (click)="openSocial('facebook', 'fab1')">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('twitter', 'fab1')">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('vimeo', 'fab1')">
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('instagram', 'fab1')">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="end" id="fab2" slot="fixed">
+    <ion-fab-button (click)="clickMainFAB('fab2')" color="dark" class="e2eFabBottomRight">
+      <ion-icon name="arrow-dropleft"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button (click)="openSocial('facebook', 'fab2')">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('twitter', 'fab2')">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('vimeo', 'fab2')">
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('instagram', 'fab2')">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab vertical="center" horizontal="start" id="fab3" slot="fixed">
+    <ion-fab-button (click)="clickMainFAB('fab3')" color="secondary" class="e2eFabTopLeft">
+      <ion-icon name="arrow-dropright"></ion-icon>
+    </ion-fab-button>
+    <!-- side:fab列表将显示相对于主fab按钮的一侧 -->
+    <ion-fab-list side="end">
+      <ion-fab-button (click)="openSocial('facebook', 'fab3')">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('twitter', 'fab3')">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('vimeo', 'fab3')">
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('instagram', 'fab3')">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab vertical="bottom" horizontal="start" id="fab4" slot="fixed">
+    <ion-fab-button (click)="clickMainFAB('fab4')" color="light" class="e2eFabBottomLeft">
+      <ion-icon name="arrow-dropup"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="openSocial('facebook', 'fab4')">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('twitter', 'fab4')">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('vimeo', 'fab4')">
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="openSocial('instagram', 'fab4')">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab vertical="center" horizontal="center" id="fab5" slot="fixed">
+    <ion-fab-button (click)="clickMainFAB('fab5')" class="e2eFabCenter">
+      <ion-icon name="md-share"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="openSocial('vimeo', 'fab5')" color="primary">
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button (click)="openSocial('facebook', 'fab5')" color="secondary">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button (click)="openSocial('instagram', 'fab5')" color="light">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button (click)="openSocial('twitter', 'fab5')" color="dark">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

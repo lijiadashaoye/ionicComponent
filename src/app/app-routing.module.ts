@@ -8,6 +8,7 @@ import { CardComponent } from './card/card.component';
 import { CheckBoxComponent } from './check-box/check-box.component';
 import { DatetimeComponent } from './datetime/datetime.component';
 import { WanggeComponent } from './wangge/wangge.component';
+import { FabComponent } from './fab/fab.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path: 'wangge',
     component: WanggeComponent
+  },
+  {
+    path: 'fab',
+    component: FabComponent
   },
 ];
 

@@ -1,0 +1,20 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-fab',
+  templateUrl: './fab.component.html',
+  styleUrls: ['./fab.component.scss']
+})
+export class FabComponent implements OnInit {
+  constructor() { }
+
+  ngOnInit() {
+  }
+  openSocial(id, type) {
+    console.log(id)
+    console.log(type)
+  }
+  clickMainFAB(tar) {
+    tar.activated = !tar.activated;
+  }
+}

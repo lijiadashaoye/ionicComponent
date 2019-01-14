@@ -6,18 +6,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./some-component.component.scss']
 })
 export class SomeComponentComponent implements OnInit {
-  backButtonText='8989'
-  backButtonIcon='add'
-  backButtonColor='warning'
-  
+  backButtonText = '8989'
+  backButtonIcon = 'add'
+  backButtonColor = 'warning'
+
   constructor() { }
 
   ngOnInit() {
   }
-  DefaultClick(){
+  DefaultClick() {
     console.log(9)
   }
-  maodian(tag:HTMLElement){
+  maodian(tag: HTMLElement) {
     tag.scrollIntoView();
+  }
+  ionscroll(e) {   // 监听滚动事件数据
+    // console.log(e.detail)  
+  }
+  toBottom(tar) {
+    // console.log(tar)
+    tar.scrollToBottom()
+  }
+  toTop(tar) {
+    // console.log(tar)
+    tar.scrollToTop()
   }
 }

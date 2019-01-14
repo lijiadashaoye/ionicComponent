@@ -42,6 +42,10 @@ export class AppComponent {
       title: 'wangge',
       url: '/wangge',
       icon: 'star'
+    },{
+      title: 'fab',
+      url: '/fab',
+      icon: 'star'
     }
   ];
 

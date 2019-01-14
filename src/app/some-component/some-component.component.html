@@ -14,7 +14,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content #content>
+  <ion-button (click)="toBottom(content)">
+    直接到底部
+  </ion-button>
   <h2>自定义头像图片</h2>
   <ion-item>
     <ion-avatar slot="start">
@@ -184,5 +187,7 @@
   <ion-button strong="true">strong</ion-button>
   <ion-button (click)="maodian(isBack)">锚点1</ion-button>
 
-
+  <ion-button (click)="toTop(content)">
+    直接到顶部
+  </ion-button>
 </ion-content>

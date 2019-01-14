@@ -21,7 +21,5 @@ export class CheckBoxComponent implements OnInit {
 
   ngOnInit() {
   }
-  ionscroll(e){   // 获取滚动数据
-    // console.log(e.detail)  
-  }
+
 }

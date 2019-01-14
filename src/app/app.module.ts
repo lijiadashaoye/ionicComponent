@@ -16,6 +16,7 @@ import { CardComponent } from './card/card.component';
 import { CheckBoxComponent } from './check-box/check-box.component';
 import { DatetimeComponent } from './datetime/datetime.component';
 import { WanggeComponent } from './wangge/wangge.component';
+import { FabComponent } from './fab/fab.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { WanggeComponent } from './wangge/wangge.component';
     CheckBoxComponent,
     DatetimeComponent,
     WanggeComponent,
+    FabComponent,
     
   ],
   entryComponents: [],
