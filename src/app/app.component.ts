@@ -34,19 +34,30 @@ export class AppComponent {
       title: 'checkBox',
       url: '/check-box',
       icon: 'star'
-    },{
+    }, {
       title: 'datetime',
       url: '/datetime',
       icon: 'star'
-    },{
+    }, {
       title: 'wangge',
       url: '/wangge',
       icon: 'star'
-    },{
+    }, {
       title: 'fab',
       url: '/fab',
-      icon: 'star'
+      icon: 'airplane'
     }
+    , {
+      title: 'infite-scroll',
+      url: '/infite-scroll',
+      icon: 'airplane'
+    }
+    , {
+      title: 'inputs',
+      url: '/inputs',
+      icon: 'airplane'
+    }
+
   ];
 
   constructor(

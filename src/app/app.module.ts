@@ -17,6 +17,8 @@ import { CheckBoxComponent } from './check-box/check-box.component';
 import { DatetimeComponent } from './datetime/datetime.component';
 import { WanggeComponent } from './wangge/wangge.component';
 import { FabComponent } from './fab/fab.component';
+import { InfiteScrollComponent } from './infite-scroll/infite-scroll.component';
+import { InputsComponent } from './inputs/inputs.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { FabComponent } from './fab/fab.component';
     DatetimeComponent,
     WanggeComponent,
     FabComponent,
-    
+    InfiteScrollComponent,
+    InputsComponent,
   ],
   entryComponents: [],
   imports: [

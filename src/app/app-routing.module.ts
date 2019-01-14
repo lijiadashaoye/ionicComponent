@@ -9,6 +9,9 @@ import { CheckBoxComponent } from './check-box/check-box.component';
 import { DatetimeComponent } from './datetime/datetime.component';
 import { WanggeComponent } from './wangge/wangge.component';
 import { FabComponent } from './fab/fab.component';
+import { InfiteScrollComponent } from './infite-scroll/infite-scroll.component';
+import { InputsComponent } from './inputs/inputs.component';
+
 
 const routes: Routes = [
   {
@@ -45,6 +48,14 @@ const routes: Routes = [
   {
     path: 'fab',
     component: FabComponent
+  },
+  {
+    path: 'infite-scroll',
+    component: InfiteScrollComponent
+  },
+  {
+    path: 'inputs',
+    component: InputsComponent
   },
 ];
 

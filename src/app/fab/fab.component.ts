@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fab.component.scss']
 })
 export class FabComponent implements OnInit {
+  
   constructor() { }
 
   ngOnInit() {
