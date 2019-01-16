@@ -17,28 +17,24 @@
       </ion-label>
     </ion-list-header>
 
-    <!-- Default Item -->
     <ion-item>
       <ion-label>
         Item
       </ion-label>
     </ion-item>
 
-    <!-- Item as a Button -->
     <ion-item (click)="buttonClick()">
       <ion-label>
         添加 click 的
       </ion-label>
     </ion-item>
 
-    <!-- Item as an Anchor -->
     <ion-item href="https://www.ionicframework.com">
       <ion-label>
         添加 href 的
       </ion-label>
     </ion-item>
 
-    <!-- Secondary Color Item-->
     <ion-item color="secondary">
       <ion-label>
         添加 color 的
@@ -285,9 +281,9 @@
   </ion-list>
 
   <ion-list>
-    <ion-item-divider color="danger">
+    <ion-item-divider color="danger" sticky='true'>
       <ion-label>
-        段落分隔 A ，设置颜色
+        段落分隔 A ，设置颜色，添加了 sticky='true',遇到其他ion-list 就失效了
       </ion-label>
     </ion-item-divider>
 
@@ -301,7 +297,7 @@
       <ion-label>A3</ion-label>
     </ion-item>
 
-    <ion-item-divider>
+    <ion-item-divider sticky='true'>
       <ion-label>
         段落分隔 B ，默认为灰色
       </ion-label>
@@ -318,14 +314,8 @@
     </ion-item>
   </ion-list>
 
-  <ion-item-divider>
-    <ion-label>
-      单独使用 ion-item-divider
-    </ion-label>
-  </ion-item-divider>
-
   <ion-list>
-    <ion-item-divider>
+    <ion-item-divider sticky='true'>
       <ion-label>
         在 ion-list 中使用 ion-item-divider
       </ion-label>
@@ -397,7 +387,11 @@
     <ion-item-divider color="secondary">
       <ion-label>Secondary</ion-label>
     </ion-item-divider>
-
+    <ion-item-divider sticky='true'>
+      <ion-label>
+        11111111111111
+      </ion-label>
+    </ion-item-divider>
     <ion-item>
       <ion-label>
         Column 1
@@ -408,7 +402,437 @@
       <ion-label>
         Column 3
       </ion-label>
+      <ion-label>
+        Column 4
+      </ion-label>
+    </ion-item>
+
+    <ion-item-divider sticky='true'>
+      <ion-label>
+        22222222222222
+      </ion-label>
+    </ion-item-divider>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item-divider sticky='true'>
+      <ion-label>
+        333333333333
+      </ion-label>
+    </ion-item-divider>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+
+    <ion-item-divider sticky='true'>
+      <ion-label>
+        44444444444444444444
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+
+    <ion-item-divider sticky='true'>
+      <ion-label>
+        5555555555555
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Column 1
+      </ion-label>
     </ion-item>
   </ion-item-group>
+
+  
 
 </ion-content>
