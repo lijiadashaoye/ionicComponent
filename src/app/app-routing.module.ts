@@ -12,6 +12,7 @@ import { FabComponent } from './fab/fab.component';
 import { InfiteScrollComponent } from './infite-scroll/infite-scroll.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { ItemComponent } from './item/item.component';
+import { SideSwipeComponent } from './side-swipe/side-swipe.component';
 
 const routes: Routes = [
   {
@@ -30,12 +31,12 @@ const routes: Routes = [
   {
     path: 'some-component',
     component: SomeComponentComponent
-  },{
-    path:'card',
-    component:CardComponent
-  },{
-    path:'check-box',
-    component:CheckBoxComponent
+  }, {
+    path: 'card',
+    component: CardComponent
+  }, {
+    path: 'check-box',
+    component: CheckBoxComponent
   },
   {
     path: 'datetime',
@@ -61,6 +62,10 @@ const routes: Routes = [
     path: 'items',
     component: ItemComponent
   },
+  {
+    path: 'side-swipe',
+    component: SideSwipeComponent
+  }
 ];
 
 @NgModule({

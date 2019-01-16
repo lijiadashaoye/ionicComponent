@@ -20,6 +20,7 @@ import { FabComponent } from './fab/fab.component';
 import { InfiteScrollComponent } from './infite-scroll/infite-scroll.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { ItemComponent } from './item/item.component';
+import { SideSwipeComponent } from './side-swipe/side-swipe.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ItemComponent } from './item/item.component';
     InfiteScrollComponent,
     InputsComponent,
     ItemComponent,
+    SideSwipeComponent,
   ],
   entryComponents: [],
   imports: [
