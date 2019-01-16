@@ -19,6 +19,7 @@ import { WanggeComponent } from './wangge/wangge.component';
 import { FabComponent } from './fab/fab.component';
 import { InfiteScrollComponent } from './infite-scroll/infite-scroll.component';
 import { InputsComponent } from './inputs/inputs.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { InputsComponent } from './inputs/inputs.component';
     FabComponent,
     InfiteScrollComponent,
     InputsComponent,
+    ItemComponent,
   ],
   entryComponents: [],
   imports: [

@@ -11,7 +11,7 @@ import { WanggeComponent } from './wangge/wangge.component';
 import { FabComponent } from './fab/fab.component';
 import { InfiteScrollComponent } from './infite-scroll/infite-scroll.component';
 import { InputsComponent } from './inputs/inputs.component';
-
+import { ItemComponent } from './item/item.component';
 
 const routes: Routes = [
   {
@@ -56,6 +56,10 @@ const routes: Routes = [
   {
     path: 'inputs',
     component: InputsComponent
+  },
+  {
+    path: 'items',
+    component: ItemComponent
   },
 ];
 

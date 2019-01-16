@@ -56,6 +56,10 @@ export class AppComponent {
       title: 'inputs',
       url: '/inputs',
       icon: 'airplane'
+    }, {
+      title: 'items',
+      url: '/items',
+      icon: 'airplane'
     }
 
   ];
