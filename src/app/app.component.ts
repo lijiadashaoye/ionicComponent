@@ -60,6 +60,10 @@ export class AppComponent {
       title: 'items',
       url: '/items',
       icon: 'sunny'
+    }, {
+      title: 'side-swipe',
+      url: '/side-swipe',
+      icon: 'sunny'
     }
 
   ];

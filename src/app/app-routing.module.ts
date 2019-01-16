@@ -63,9 +63,9 @@ const routes: Routes = [
     component: ItemComponent
   },
   {
-    path: 'side-swipe',
+    path:'side-swipe',
     component: SideSwipeComponent
-  }
+  },
 ];
 
 @NgModule({
