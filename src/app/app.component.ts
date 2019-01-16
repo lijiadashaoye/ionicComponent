@@ -59,7 +59,7 @@ export class AppComponent {
     }, {
       title: 'items',
       url: '/items',
-      icon: 'airplane'
+      icon: 'sunny'
     }
 
   ];
