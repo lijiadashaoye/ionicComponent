@@ -28,6 +28,10 @@
     <ion-label slot="start">0</ion-label>
     <ion-label slot="end">100</ion-label>
   </ion-range>
+  <h2>
+    {{changeVal}}
+  </h2>
+  <p>两个滑钮</p>
   <ion-range min="0" max="80" step="2" dualKnobs>
     <ion-label slot="start">0</ion-label>
     <ion-label slot="end">100</ion-label>
@@ -40,9 +44,6 @@
     <ion-icon small name="ios-thermometer" slot="start"></ion-icon>
     <ion-icon name="ios-thermometer" slot="end"></ion-icon>
   </ion-range>
-  <h2>
-    {{changeVal}}
-  </h2>
   <ion-item>
     <ion-label>在前边</ion-label>
     <ion-radio slot="start" color="danger" value="apple"></ion-radio>
@@ -51,7 +52,7 @@
     <ion-label>在后边</ion-label>
     <ion-radio slot="end" color="danger" value="apple"></ion-radio>
   </ion-item>
-
+  <p>radio 组</p>
   <ion-radio-group #jj (ionChange)="ionChanges(jj)">
     <ion-item>
       <ion-label>Pepperoni</ion-label>
