@@ -53,4 +53,7 @@ export class Page1Component {
   ionChanges(jj) {
     console.log(jj)
   }
+  rangeChanges() {
+    console.log(9)
+  }
 }

@@ -28,6 +28,14 @@
     <ion-label slot="start">0</ion-label>
     <ion-label slot="end">100</ion-label>
   </ion-range>
+  <ion-range min="0" max="80" step="2" dualKnobs>
+    <ion-label slot="start">0</ion-label>
+    <ion-label slot="end">100</ion-label>
+  </ion-range>
+  <ion-range pin='true' step="1" debounce='20' (ionChange)="rangeChanges()">
+    <ion-label slot="start">0</ion-label>
+    <ion-label slot="end">100</ion-label>
+  </ion-range>
   <h2>
     {{changeVal}}
   </h2>
