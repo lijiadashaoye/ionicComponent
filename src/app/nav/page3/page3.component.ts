@@ -13,7 +13,7 @@ export class Page3Component {
     public params: NavParams,
   ) {
     let kk = this.params.data
-    console.log(kk)
+    // console.log(kk)
   }
 
   dfasdf() {   // 关闭并返回数据
@@ -22,5 +22,4 @@ export class Page3Component {
       age: 44
     })
   }
-
 }

@@ -10,14 +10,15 @@ import { PopoverController } from '@ionic/angular';
   styleUrls: ['./page1.component.scss']
 })
 export class Page1Component {
-  pageParams: any;
-  page2 = Page2Component
+  pageParams2: any;
+  page2 = Page2Component;
+  returnData:any
 
   constructor(
     public params: NavParams,
     public popover: PopoverController
   ) {
-    this.pageParams = {
+    this.pageParams2 = {
       ...params.data
     };
     // console.log(this.pageParams)
@@ -36,7 +37,8 @@ export class Page1Component {
     await popover.present();
 
     let willDismiss = await popover.onWillDismiss();
-    console.log(willDismiss)
+    this.returnData=willDismiss.data;
+    // console.log(this.returnData)
   }
 
 }
