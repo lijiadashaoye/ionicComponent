@@ -72,7 +72,7 @@ const routes: Routes = [
     path: 'modal',
     component: ModalComponent
   }, {
-    path: 'nav',
+    path: 'nav_popover',
     component: NavComponent
   },
 ];

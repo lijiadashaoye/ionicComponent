@@ -12,8 +12,7 @@ export class ModalComponent {
   constructor(public modalController: ModalController) { }
 
   ngOnInit(): void {
-    // window.addEventListener("ionModalDidDismiss", function (e) { console.log('DidDismiss', e) })
-  }
+ }
   async presentModal() {
     const modal = await this.modalController.create({
       backdropDismiss: true,

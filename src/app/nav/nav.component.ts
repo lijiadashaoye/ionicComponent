@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { Page1Component } from './page1/page1.component';
 
 @Component({

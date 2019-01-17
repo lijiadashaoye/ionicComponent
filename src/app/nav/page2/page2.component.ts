@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { NavParams, IonNav, NavController } from '@ionic/angular';
-import { Page3Component } from '../page3/page3.component';
+import { Component } from '@angular/core';
+import { IonNav, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-page2',
@@ -8,19 +7,11 @@ import { Page3Component } from '../page3/page3.component';
   styleUrls: ['./page2.component.scss']
 })
 export class Page2Component {
-  pageParams: any;
-  page3 = Page3Component
 
   constructor(
-    public params: NavParams,
     public navCtrl: IonNav,
-    public NavCont: NavController
-  ) {
-    this.pageParams = {
-      ...params.data
-    };
-    // console.log(this.pageParams)
-  }
+    public NavCont: NavController,
+  ) {}
   goBack() {
     this.navCtrl.pop()
   }
@@ -38,4 +29,5 @@ export class Page2Component {
     //   console.log(val)
     // })
   }
+
 }
