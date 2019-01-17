@@ -13,6 +13,8 @@ import { InfiteScrollComponent } from './infite-scroll/infite-scroll.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { ItemComponent } from './item/item.component';
 import { SideSwipeComponent } from './side-swipe/side-swipe.component';
+import { ModalComponent } from './modal/modal.component';
+import { NavComponent } from './nav/nav.component';
 
 const routes: Routes = [
   {
@@ -63,8 +65,15 @@ const routes: Routes = [
     component: ItemComponent
   },
   {
-    path:'side-swipe',
+    path: 'side-swipe',
     component: SideSwipeComponent
+  },
+  {
+    path: 'modal',
+    component: ModalComponent
+  }, {
+    path: 'nav',
+    component: NavComponent
   },
 ];
 

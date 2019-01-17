@@ -10,14 +10,10 @@ import {
   templateUrl: './action-sheet.component.html',
   styleUrls: ['./action-sheet.component.scss']
 })
-export class ActionSheetComponent implements OnInit {
+export class ActionSheetComponent {
   text: string;
-  constructor(public actionSheetController: ActionSheetController) {}
-  ngOnInit(): void {
-    // window.addEventListener('ionActionSheetDidDismiss', function (e) {
-    //   console.log('didDismiss', e)
-    // })
-  }
+  constructor(public actionSheetController: ActionSheetController) { }
+
   async presentBasic() {
     const actionSheet = await this.actionSheetController.create({
       header: "Albums",
@@ -122,115 +118,115 @@ export class ActionSheetComponent implements OnInit {
   async presentScroll() {
     const actionSheetElement = await this.actionSheetController.create({
       buttons: [{
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        }, {
-          text: 'Copy Text',
-          handler: () => {
-            this.text = 'Copy Text clicked';
-          }
-        }, {
-          text: 'Share Text',
-          handler: () => {
-            this.text = 'Share Text clicked';
-          }
-        }, {
-          text: 'Copy Link to Message',
-          handler: () => {
-            this.text = 'Copy Link to Message clicked';
-          }
-        }, {
-          text: 'Remind Me',
-          handler: () => {
-            this.text = 'Remind Me clicked';
-          }
-        }, {
-          text: 'Pin File',
-          handler: () => {
-            this.text = 'Pin File clicked';
-          }
-        }, {
-          text: 'Star File',
-          handler: () => {
-            this.text = 'Star File clicked';
-          }
-        }, {
-          text: 'Mark Unread',
-          handler: () => {
-            this.text = 'Mark Unread clicked';
-          }
-        }, {
-          text: 'Edit Title',
-          handler: () => {
-            this.text = 'Edit Title clicked';
-          }
-        }, {
-          text: 'Save Image',
-          handler: () => {
-            this.text = 'Save Image clicked';
-          }
-        }, {
-          text: 'Copy Image',
-          handler: () => {
-            this.text = 'Copy Image clicked';
-          }
-        }, {
-          text: 'Delete File',
-          role: 'destructive',
-          handler: () => {
-            this.text = 'Delete File clicked';
-          }
-        }, {
-          text: 'Cancel',
-          role: 'cancel', // will always sort to be on the bottom
-          handler: () => {
-            this.text = 'Cancel clicked';
-          }
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
         }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      }, {
+        text: 'Copy Text',
+        handler: () => {
+          this.text = 'Copy Text clicked';
+        }
+      }, {
+        text: 'Share Text',
+        handler: () => {
+          this.text = 'Share Text clicked';
+        }
+      }, {
+        text: 'Copy Link to Message',
+        handler: () => {
+          this.text = 'Copy Link to Message clicked';
+        }
+      }, {
+        text: 'Remind Me',
+        handler: () => {
+          this.text = 'Remind Me clicked';
+        }
+      }, {
+        text: 'Pin File',
+        handler: () => {
+          this.text = 'Pin File clicked';
+        }
+      }, {
+        text: 'Star File',
+        handler: () => {
+          this.text = 'Star File clicked';
+        }
+      }, {
+        text: 'Mark Unread',
+        handler: () => {
+          this.text = 'Mark Unread clicked';
+        }
+      }, {
+        text: 'Edit Title',
+        handler: () => {
+          this.text = 'Edit Title clicked';
+        }
+      }, {
+        text: 'Save Image',
+        handler: () => {
+          this.text = 'Save Image clicked';
+        }
+      }, {
+        text: 'Copy Image',
+        handler: () => {
+          this.text = 'Copy Image clicked';
+        }
+      }, {
+        text: 'Delete File',
+        role: 'destructive',
+        handler: () => {
+          this.text = 'Delete File clicked';
+        }
+      }, {
+        text: 'Cancel',
+        role: 'cancel', // will always sort to be on the bottom
+        handler: () => {
+          this.text = 'Cancel clicked';
+        }
+      }
       ]
     });
     await actionSheetElement.present();
@@ -238,116 +234,116 @@ export class ActionSheetComponent implements OnInit {
   async presentScrollNoCancel() {
     const actionSheetElement = await this.actionSheetController.create({
       buttons: [{
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Add Reaction',
-          handler: () => {
-            this.text = 'Add Reaction clicked';
-          }
-        },
-        {
-          text: 'Copy Text',
-          handler: () => {
-            this.text = 'Copy Text clicked';
-          }
-        }, {
-          text: 'Share Text',
-          handler: () => {
-            this.text = 'Share Text clicked';
-          }
-        }, {
-          text: 'Copy Link to Message',
-          handler: () => {
-            this.text = 'Copy Link to Message clicked';
-          }
-        }, {
-          text: 'Remind Me',
-          handler: () => {
-            this.text = 'Remind Me clicked';
-          }
-        }, {
-          text: 'Pin File',
-          handler: () => {
-            this.text = 'Pin File clicked';
-          }
-        }, {
-          text: 'Star File',
-          handler: () => {
-            this.text = 'Star File clicked';
-          }
-        }, {
-          text: 'Mark Unread',
-          handler: () => {
-            this.text = 'Mark Unread clicked';
-          }
-        }, {
-          text: 'Edit Title',
-          handler: () => {
-            this.text = 'Edit Title clicked';
-          }
-        }, {
-          text: 'Save Image',
-          handler: () => {
-            this.text = 'Save Image clicked';
-          }
-        }, {
-          text: 'Copy Image',
-          handler: () => {
-            this.text = 'Copy Image clicked';
-          }
-        }, {
-          text: 'Delete File',
-          role: 'destructive',
-          handler: () => {
-            this.text = 'Delete File clicked';
-          }
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
         }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Add Reaction',
+        handler: () => {
+          this.text = 'Add Reaction clicked';
+        }
+      },
+      {
+        text: 'Copy Text',
+        handler: () => {
+          this.text = 'Copy Text clicked';
+        }
+      }, {
+        text: 'Share Text',
+        handler: () => {
+          this.text = 'Share Text clicked';
+        }
+      }, {
+        text: 'Copy Link to Message',
+        handler: () => {
+          this.text = 'Copy Link to Message clicked';
+        }
+      }, {
+        text: 'Remind Me',
+        handler: () => {
+          this.text = 'Remind Me clicked';
+        }
+      }, {
+        text: 'Pin File',
+        handler: () => {
+          this.text = 'Pin File clicked';
+        }
+      }, {
+        text: 'Star File',
+        handler: () => {
+          this.text = 'Star File clicked';
+        }
+      }, {
+        text: 'Mark Unread',
+        handler: () => {
+          this.text = 'Mark Unread clicked';
+        }
+      }, {
+        text: 'Edit Title',
+        handler: () => {
+          this.text = 'Edit Title clicked';
+        }
+      }, {
+        text: 'Save Image',
+        handler: () => {
+          this.text = 'Save Image clicked';
+        }
+      }, {
+        text: 'Copy Image',
+        handler: () => {
+          this.text = 'Copy Image clicked';
+        }
+      }, {
+        text: 'Delete File',
+        role: 'destructive',
+        handler: () => {
+          this.text = 'Delete File clicked';
+        }
+      }
       ]
     });
     await actionSheetElement.present();
@@ -368,20 +364,20 @@ export class ActionSheetComponent implements OnInit {
     const actionSheetElement = await this.actionSheetController.create({
       header: "自定义css需要写到global",
       buttons: [{
-          text: 'Test',
-          role: 'test',
-          cssClass: 'selfCss2',
-          handler: () => {
-            this.text = 'Test';
-          }
-        },
-        {
-          text: 'Cancel',
-          role: 'cancel', // will always sort to be on the bottom
-          handler: () => {
-            this.text = 'Cancel clicked';
-          }
+        text: 'Test',
+        role: 'test',
+        cssClass: 'selfCss2',
+        handler: () => {
+          this.text = 'Test';
         }
+      },
+      {
+        text: 'Cancel',
+        role: 'cancel', // will always sort to be on the bottom
+        handler: () => {
+          this.text = 'Cancel clicked';
+        }
+      }
       ]
     });
     await actionSheetElement.present();

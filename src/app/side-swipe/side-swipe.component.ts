@@ -7,10 +7,11 @@ import { LoadingController } from '@ionic/angular';
   styleUrls: ['./side-swipe.component.scss']
 })
 export class SideSwipeComponent {
-  constructor(public loadingController: LoadingController) { }
+  constructor(
+    public loadingController: LoadingController,
+    ) { }
 
   async show() {
-
     const loading = await this.loadingController.create({
       animated: true,
       spinner: 'circles',  // modal 转圈的样式
@@ -19,16 +20,11 @@ export class SideSwipeComponent {
       translucent: true,
       cssClass: 'custom-loading',
       showBackdrop: true,
-      keyboardClose: true
+      keyboardClose: true,
     });
-    
     await loading.present();
-
     setTimeout(() => {  // 通过事件关闭弹框
       loading.dismiss()
     }, 5000)
   }
-
-
-
 }

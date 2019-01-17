@@ -21,6 +21,12 @@ import { InfiteScrollComponent } from './infite-scroll/infite-scroll.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { ItemComponent } from './item/item.component';
 import { SideSwipeComponent } from './side-swipe/side-swipe.component';
+import { ModalComponent } from './modal/modal.component';
+import { ModalChildComponent } from './modal/modal-child/modal-child.component';
+import { NavComponent } from './nav/nav.component';
+import { Page1Component } from './nav/page1/page1.component';
+import { Page2Component } from './nav/page2/page2.component';
+import { Page3Component } from './nav/page3/page3.component';
 
 @NgModule({
   declarations: [
@@ -37,8 +43,19 @@ import { SideSwipeComponent } from './side-swipe/side-swipe.component';
     InputsComponent,
     ItemComponent,
     SideSwipeComponent,
+    ModalComponent,
+    ModalChildComponent,
+    NavComponent,
+    Page1Component,
+    Page2Component,
+    Page3Component,
   ],
-  entryComponents: [],
+  entryComponents: [
+    ModalChildComponent,
+    Page1Component,
+    Page2Component,
+    Page3Component
+  ],
   imports: [
     BrowserModule,
     FormsModule,

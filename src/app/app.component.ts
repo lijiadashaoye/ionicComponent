@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -64,6 +65,14 @@ export class AppComponent {
       title: 'side-swipe',
       url: '/side-swipe',
       icon: 'sunny'
+    }, {
+      title: 'modal',
+      url: '/modal',
+      icon: 'sunny'
+    }, {
+      title: 'nav',
+      url: '/nav',
+      icon: 'sunny'
     }
 
   ];
@@ -71,7 +80,8 @@ export class AppComponent {
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    public menu: MenuController
   ) {
     this.initializeApp();
   }
@@ -82,4 +92,9 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
+  openFirst() {
+    this.menu.open('start');
+  }
+
 }

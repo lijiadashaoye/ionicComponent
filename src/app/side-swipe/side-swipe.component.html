@@ -1,14 +1,16 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button>
+        <img class="menuImg" src="../../assets/earth.png">
+      </ion-menu-button>
     </ion-buttons>
     <ion-title>
       side-swipe
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content fullscreen>
+<ion-content>
 
   <ion-list>
     <div>
@@ -163,8 +165,6 @@
   <ion-label color="danger">Danger Label</ion-label>
   <ion-label color="light">Light Label</ion-label>
   <ion-label color="dark">Dark Label</ion-label>
-
-  <hr>
 
   <ion-button id="default" expand="block" (click)="show()">
     显示默认样式</ion-button>

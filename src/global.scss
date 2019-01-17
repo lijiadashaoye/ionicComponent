@@ -24,13 +24,26 @@
         url('assets/fonts/iconfont.ttf') format('truetype'),
         url('assets/fonts/iconfont.svg#myIcon') format('svg');
 }
+
 .myIcon {
     font-family: "myIcon";
     font-size: 16px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  .loading-wrapper {
-    --spinner-color: rgb(223, 16, 16);
-  }
+}
+
+.loading-wrapper {
+    // 加载动画的颜色
+    --spinner-color: rgb(7, 248, 67);
+}
+
+.my-custom-menu {
+    // menu 侧边的宽度设置
+    --width: 70%;
+}
+
+// side-swipe 的 menu按钮的样式设置
+.menuImg {
+    height: 100%;
+}
