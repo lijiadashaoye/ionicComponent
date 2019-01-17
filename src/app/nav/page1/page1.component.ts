@@ -12,7 +12,9 @@ import { PopoverController } from '@ionic/angular';
 export class Page1Component {
   pageParams2: any;
   page2 = Page2Component;
-  returnData:any
+  returnData: any;
+  changeVal: any = null;
+  setTime: any
 
   constructor(
     public params: NavParams,
@@ -22,6 +24,13 @@ export class Page1Component {
       ...params.data
     };
     // console.log(this.pageParams)
+
+    this.setTime = setInterval(() => {
+      this.changeVal++;
+      if (this.changeVal > 88) {
+        clearInterval(this.setTime)
+      }
+    }, 300)
   }
 
   async presentPopover(ev: any) {
@@ -37,8 +46,11 @@ export class Page1Component {
     await popover.present();
 
     let willDismiss = await popover.onWillDismiss();
-    this.returnData=willDismiss.data;
+    this.returnData = willDismiss.data;
     // console.log(this.returnData)
   }
 
+  ionChanges(jj) {
+    console.log(jj)
+  }
 }

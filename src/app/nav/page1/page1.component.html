@@ -17,5 +17,39 @@
   <p>
     {{returnData | json}}
   </p>
+  <br>
+  <ion-progress-bar type="determinate" color="danger" value="0.3"></ion-progress-bar><br>
+  <ion-progress-bar type="determinate" value="0.6"></ion-progress-bar><br>
+  <ion-progress-bar type="indeterminate"></ion-progress-bar><br>
+  <ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+  <br>
+
+  <ion-range pin="true" [(ngModel)]="changeVal">
+    <ion-label slot="start">0</ion-label>
+    <ion-label slot="end">100</ion-label>
+  </ion-range>
+  <h2>
+    {{changeVal}}
+  </h2>
+  <ion-item>
+    <ion-label>在前边</ion-label>
+    <ion-radio slot="start" color="danger" value="apple"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>在后边</ion-label>
+    <ion-radio slot="end" color="danger" value="apple"></ion-radio>
+  </ion-item>
+
+  <ion-radio-group #jj (ionChange)="ionChanges(jj)">
+    <ion-item>
+      <ion-label>Pepperoni</ion-label>
+      <ion-radio slot="end" value="1" name="pepperoni" checked></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sausage</ion-label>
+      <ion-radio slot="end" value="2" color="danger" name="sausage"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
 
 </ion-content>
