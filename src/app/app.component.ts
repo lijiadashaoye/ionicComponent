@@ -70,7 +70,7 @@ export class AppComponent {
       url: '/modal',
       icon: 'sunny'
     }, {
-      title: 'nav_popover',
+      title: 'nav_popover_range',
       url: '/nav_popover',
       icon: 'sunny'
     }

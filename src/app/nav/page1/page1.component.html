@@ -7,15 +7,15 @@
   <ion-nav-push [component]="page2" [componentProps]="pageParams">
     <ion-button>to page2</ion-button>
   </ion-nav-push>
+  <p>
+    {{returnData | json}}
+  </p>
 
   <ion-button (click)="presentPopover($event)">显示prover
     <ion-icon slot="icon-only" name="person"></ion-icon>
   </ion-button>
   <p>
     为了相对于单击的元素定位弹出框，需要将click事件传递给方法的选项present。如果未传递事件，则弹出窗口将位于视口的中心。
-  </p>
-  <p>
-    {{returnData | json}}
   </p>
   <br>
   <ion-progress-bar type="determinate" color="danger" value="0.3"></ion-progress-bar><br>
@@ -32,9 +32,13 @@
     <ion-label slot="start">0</ion-label>
     <ion-label slot="end">100</ion-label>
   </ion-range>
-  <ion-range pin='true' step="1" debounce='20' (ionChange)="rangeChanges()">
+  <ion-range pin='true' snaps="true" step="1" debounce='20' (ionChange)="rangeChanges()">
     <ion-label slot="start">0</ion-label>
     <ion-label slot="end">100</ion-label>
+  </ion-range>
+  <ion-range pin="true" color="danger" value="54">
+    <ion-icon small name="ios-thermometer" slot="start"></ion-icon>
+    <ion-icon name="ios-thermometer" slot="end"></ion-icon>
   </ion-range>
   <h2>
     {{changeVal}}
