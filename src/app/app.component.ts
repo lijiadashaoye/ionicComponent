@@ -10,7 +10,7 @@ import { MenuController } from '@ionic/angular';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  public appPages = [
+  arr1 = [
     {
       title: 'ActionSheet',
       url: '/actionSheet',
@@ -74,7 +74,25 @@ export class AppComponent {
       url: '/nav_popover',
       icon: 'sunny'
     }
+  ]
+  
+  arr2=[
+    {
+      title: 'refresher',
+      url: '/refresher',
+      icon: 'sunny'
+    },
+    {
+      title: 'route',
+      url: '/route',
+      icon: 'sunny'
+    }
 
+    
+  ]
+  public appPages = [
+    ...this.arr2.reverse(),
+    ...this.arr1,
   ];
 
   constructor(

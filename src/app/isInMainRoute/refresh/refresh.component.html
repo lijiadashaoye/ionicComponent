@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      下拉刷新
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-down" pullingText="下拉刷新" pullMin='10' PULLMAX='40' refreshingSpinner="crescent"
+      refreshingText="加载中...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-text>
+    {{datas}}
+  </ion-text>
+</ion-content>

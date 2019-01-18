@@ -1,0 +1,16 @@
+<ion-content>
+  lazy1
+  <div>
+    <ion-button (click)="testRoute()">lazy2</ion-button>
+    <ion-button (click)="testRoute1()">lazy1_child1</ion-button>
+    <ion-button (click)="testRoute2()">lazy1_child2</ion-button>
+  </div>
+
+  <div>
+    <h2>
+      lazy1 的子路由
+    </h2>
+    <router-outlet></router-outlet>
+  </div>
+
+</ion-content>
