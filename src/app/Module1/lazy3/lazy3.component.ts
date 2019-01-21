@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
+import { TabsService } from '../state.service'
 
 @Component({
   selector: 'app-lazy3',
@@ -8,12 +9,15 @@ import { Router } from '@angular/router'
 })
 export class Lazy3Component implements OnInit {
   constructor(
-    private route: Router
+    private route: Router,
+    private tabs: TabsService
   ) { }
 
   ngOnInit() {
   }
   testChild() {
-    this.route.navigate(['route/lazy1'])
+    this.tabs.toDo(true);
+    // this.route.navigate(['route/lazy2'])
   }
+
 }

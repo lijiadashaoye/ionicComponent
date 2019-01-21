@@ -1,5 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="返回lazy2" defaultHref="route/lazy2" (click)="testChild()"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      模拟 back-button
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
-  <ion-back-button text="返回lazy2" defaultHref="route/lazy2"></ion-back-button>
   lazy3
-  <ion-button (click)="testChild()">lazy1</ion-button>
 </ion-content>

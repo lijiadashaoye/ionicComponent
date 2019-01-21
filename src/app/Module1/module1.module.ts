@@ -10,6 +10,7 @@ import { Lazy3Component } from '../Module1/lazy3/lazy3.component';
 import { Lazy1Child1Component } from '../Module1/lazy1/lazy1-child1/lazy1-child1.component';
 import { Lazy1Child2Component } from '../Module1/lazy1/lazy1-child2/lazy1-child2.component';
 
+import { TabsService } from './state.service'
 @NgModule({
   declarations: [
     TabsComponent,
@@ -23,6 +24,9 @@ import { Lazy1Child2Component } from '../Module1/lazy1/lazy1-child2/lazy1-child2
     CommonModule,
     IonicModule,
     Module1RoutingModule
+  ],
+  providers: [
+    TabsService
   ]
 })
 export class Module1Module { }

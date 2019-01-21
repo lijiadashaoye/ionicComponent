@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
 import { ToastController } from '@ionic/angular';
+import { TabsService } from '../state.service'
 
 @Component({
   selector: 'app-lazy2',
@@ -8,15 +9,17 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./lazy2.component.scss']
 })
 export class Lazy2Component implements OnInit {
-
   constructor(
     private route: Router,
-    public toastController: ToastController
+    public toastController: ToastController,
+    private tabs: TabsService
   ) { }
 
   ngOnInit() {
   }
   testChild() {
+    this.tabs.toDo(false);
+    
     this.route.navigate(['route/lazy3'])
   }
 
