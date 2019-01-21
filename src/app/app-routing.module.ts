@@ -17,7 +17,6 @@ import { ModalComponent } from './isInMainRoute/modal/modal.component';
 import { NavComponent } from './isInMainRoute/nav_propver/nav.component';
 import { RefreshComponent } from './isInMainRoute/refresh/refresh.component';
 
-
 let arr1 = [
   {
     path: '',
@@ -87,7 +86,7 @@ const routes: Routes = [
   {
     path: 'route',
     loadChildren: './Module1/module1.module#Module1Module'
-  },
+  }
 ];
 
 @NgModule({

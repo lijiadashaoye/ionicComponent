@@ -10,5 +10,8 @@ export class TabsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  ionNavWillChanges(e) {
+    // 导航即将转换为新组件时发出，每次切换都会触发
+    // console.log(e)
+  }
 }

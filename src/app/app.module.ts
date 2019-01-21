@@ -54,7 +54,7 @@ const obj1 = [
 @NgModule({
   declarations: [
     AppComponent,
-    ...obj1
+    ...obj1,
   ],
   entryComponents: [
     ModalChildComponent,

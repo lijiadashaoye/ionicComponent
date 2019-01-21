@@ -62,7 +62,7 @@ export class AppComponent {
       url: '/items',
       icon: 'sunny'
     }, {
-      title: 'side-swipe',
+      title: 'swipe_loading',
       url: '/side-swipe',
       icon: 'sunny'
     }, {
@@ -75,20 +75,18 @@ export class AppComponent {
       icon: 'sunny'
     }
   ]
-  
-  arr2=[
+
+  arr2 = [
     {
       title: 'refresher_forms',
       url: '/refresher',
       icon: 'sunny'
     },
     {
-      title: 'route',
+      title: '路由',
       url: '/route',
       icon: 'sunny'
     }
-
-    
   ]
   public appPages = [
     ...this.arr2.reverse(),

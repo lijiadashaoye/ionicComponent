@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-lazy2',
@@ -9,12 +10,25 @@ import { Router } from '@angular/router'
 export class Lazy2Component implements OnInit {
 
   constructor(
-    private route: Router
+    private route: Router,
+    public toastController: ToastController
   ) { }
 
   ngOnInit() {
   }
   testChild() {
     this.route.navigate(['route/lazy3'])
+  }
+
+  async show() {
+    const toast = await this.toastController.create({
+      message: 'tips 的提示信息',
+      showCloseButton: true,
+      position: 'top',   // 弹框出现的位置
+      closeButtonText: 'X',  // 要在关闭按钮中显示的文本
+      color: 'success',
+      duration: 2000,    // 显示的时间，默认一直显示
+    });
+    toast.present();
   }
 }

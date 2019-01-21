@@ -15,15 +15,16 @@
   <ion-router-outlet name="lazy2"></ion-router-outlet>
   <ion-router-outlet name="lazy3"></ion-router-outlet>
 
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab='lazy1'>
+  <ion-tabs (ionNavWillChange)="ionNavWillChanges($event)">
+    <ion-tab-bar slot="bottom" >
+      <ion-tab-button tab='lazy1' class="setTab">
         <ion-label>lazy1</ion-label>
         <ion-icon name="add"></ion-icon>
+        <ion-badge>6</ion-badge>
       </ion-tab-button>
 
       <ion-tab-button tab='lazy2'>
-        <ion-label>lazy2</ion-label>
+        <ion-label>tips</ion-label>
         <ion-icon name="logo-ionic"></ion-icon>
       </ion-tab-button>
 
