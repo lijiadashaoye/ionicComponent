@@ -14,7 +14,7 @@ import { InputsComponent } from './isInMainRoute/inputs/inputs.component';
 import { ItemComponent } from './isInMainRoute/item/item.component';
 import { SideSwipeComponent } from './isInMainRoute/side-swipe/side-swipe.component';
 import { ModalComponent } from './isInMainRoute/modal/modal.component';
-import { NavComponent } from './isInMainRoute/nav/nav.component';
+import { NavComponent } from './isInMainRoute/nav_propver/nav.component';
 import { RefreshComponent } from './isInMainRoute/refresh/refresh.component';
 
 

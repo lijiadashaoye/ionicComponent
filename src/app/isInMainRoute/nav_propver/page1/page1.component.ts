@@ -45,15 +45,16 @@ export class Page1Component {
     });
     await popover.present();
 
+    // 获取propver返回的数据
     let willDismiss = await popover.onWillDismiss();
     this.returnData = willDismiss.data;
     // console.log(this.returnData)
   }
 
   ionChanges(jj) {
-    console.log(jj)
+    // console.log(jj)
   }
-  rangeChanges() {
-    console.log(9)
+  rangeChanges(kk) {
+    // console.log(kk.value)
   }
 }

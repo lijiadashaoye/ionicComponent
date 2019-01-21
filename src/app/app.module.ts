@@ -23,10 +23,10 @@ import { ItemComponent } from './isInMainRoute/item/item.component';
 import { SideSwipeComponent } from './isInMainRoute/side-swipe/side-swipe.component';
 import { ModalComponent } from './isInMainRoute/modal/modal.component';
 import { ModalChildComponent } from './isInMainRoute/modal/modal-child/modal-child.component';
-import { NavComponent } from './isInMainRoute/nav/nav.component';
-import { Page1Component } from './isInMainRoute/nav/page1/page1.component';
-import { Page2Component } from './isInMainRoute/nav/page2/page2.component';
-import { Page3Component } from './isInMainRoute/nav/page3/page3.component';
+import { NavComponent } from './isInMainRoute/nav_propver/nav.component';
+import { Page1Component } from './isInMainRoute/nav_propver/page1/page1.component';
+import { Page2Component } from './isInMainRoute/nav_propver/page2/page2.component';
+import { Page3Component } from './isInMainRoute/nav_propver/page3/page3.component';
 import { RefreshComponent } from './isInMainRoute/refresh/refresh.component';
 
 const obj1 = [

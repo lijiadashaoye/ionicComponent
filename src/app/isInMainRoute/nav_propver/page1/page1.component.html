@@ -3,13 +3,13 @@
   <ion-nav-push [component]="page2" [componentProps]="pageParams">
     <ion-button>to page2</ion-button>
   </ion-nav-push>
+
+  <ion-button (click)="presentPopover($event)">
+    <ion-icon slot="icon-only" name="person"></ion-icon>
+  </ion-button>
   <p>
     {{returnData | json}}
   </p>
-
-  <ion-button (click)="presentPopover($event)">显示prover
-    <ion-icon slot="icon-only" name="person"></ion-icon>
-  </ion-button>
   <p>
     为了相对于单击的元素定位弹出框，需要将click事件传递给方法的选项present。如果未传递事件，则弹出窗口将位于视口的中心。
   </p>
@@ -28,7 +28,7 @@
     {{changeVal}}
   </h2>
   <p>两个滑钮</p>
-  <ion-range min="0" max="80" step="2" dualKnobs>
+  <ion-range min="0" max="100" pin='true' step="2" dualKnobs='true' #kk (ionChange)="rangeChanges(kk)">
     <ion-label slot="start">0</ion-label>
     <ion-label slot="end">100</ion-label>
   </ion-range>

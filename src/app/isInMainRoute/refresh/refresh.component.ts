@@ -13,4 +13,19 @@ export class RefreshComponent {
       event.target.complete();
     }, 2000);
   }
+
+  ionCancels(e) {
+    // console.log(e)
+  }
+  ionChanges(e) {
+    // console.log(e)
+  }
+  ionBlurs(e) {
+    // console.log(e)
+  }
+
+  segmentChanged(ev: any) {
+    // console.log('Segment changed', ev);
+  }
+
 }

@@ -18,5 +18,135 @@
 
   <ion-text>
     {{datas}}
+  </ion-text><br>
+  <ion-text>
+    type 类型："email","number","password","search","tel","text","url"
   </ion-text>
+  <h2>搜索框</h2>
+  <ion-searchbar animated='true' showCancelButton type="text" spellcheck="false" cancelButtonText="搜索" placeholder="placeholder"
+    searchIcon='search' color="success" value="" debounce="500" autocorrect="on" (ionCancel)="ionCancels($event)"
+    (ionChange)="ionChanges($event)" (ionBlur)="ionBlurs($event)"></ion-searchbar>
+
+  <h2>添加事件的选项条</h2>
+  <ion-segment (ionChange)="segmentChanged($event)" color="danger">
+    <ion-segment-button value="one" checked>
+      <ion-label>one</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="two">
+      <ion-label>two</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="three">
+      <ion-label>three</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="four">
+      <ion-label>four</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <h2>可左右滑动选项条</h2>
+  <ion-segment scrollable='true'>
+    <ion-segment-button checked>
+      <ion-icon name="home"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="heart"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="pin"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="star"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="globe"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="basket"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="pin"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="star"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="globe"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button checked>
+      <ion-icon name="home"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="heart"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="pin"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="star"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="globe"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="basket"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="pin"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="star"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="globe"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+      <ion-icon name="basket"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <h2>图标位置</h2>
+  <ion-segment>
+    <ion-segment-button layout="icon-top">
+      <ion-label>icon-top</ion-label>
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button layout="icon-bottom">
+      <ion-label>icon-bottom</ion-label>
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-segment>
+    <ion-segment-button layout="icon-start">
+      <ion-label>icon-start</ion-label>
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button layout="icon-end">
+      <ion-label>icon-end</ion-label>
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-segment>
+    <ion-segment-button layout="icon-hide">
+      <ion-label>icon-hide</ion-label>
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button layout="label-hide">
+      <ion-label>label-hide</ion-label>
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+
+  </ion-segment>
+
 </ion-content>
