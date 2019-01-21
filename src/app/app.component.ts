@@ -78,7 +78,7 @@ export class AppComponent {
   
   arr2=[
     {
-      title: 'refresher',
+      title: 'refresher_forms',
       url: '/refresher',
       icon: 'sunny'
     },
