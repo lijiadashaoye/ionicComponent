@@ -86,6 +86,10 @@ const routes: Routes = [
   {
     path: 'route',
     loadChildren: './Module1/module1.module#Module1Module'
+  },
+  {
+    path: 'native',
+    loadChildren: './native/native.module#NativeModule'
   }
 ];
 

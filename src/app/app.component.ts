@@ -86,6 +86,11 @@ export class AppComponent {
       title: '路由',
       url: '/route',
       icon: 'sunny'
+    },
+    {
+      title: 'native',
+      url: '/native',
+      icon: 'sunny'
     }
   ]
   public appPages = [
