@@ -2,8 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NativeRoutingModule } from './native.router';
 import { IonicModule } from '@ionic/angular';
-
 import { NativeComponent } from './native.component';
+
+import { Camera } from '@ionic-native/camera/ngx';
+import { ActionSheet } from '@ionic-native/action-sheet/ngx';
+import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
 
 
 @NgModule({
@@ -14,7 +17,13 @@ import { NativeComponent } from './native.component';
     CommonModule,
     IonicModule,
     NativeRoutingModule,
-    
+  ],
+  providers: [
+    Camera,
+    ActionSheet,
+    FingerprintAIO
   ]
 })
 export class NativeModule { }
+
+

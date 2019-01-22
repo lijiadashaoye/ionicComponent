@@ -9,8 +9,18 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
+  <div>
+    <ion-button expand="block" (click)="cameraFn()">相机</ion-button>
+    <img [src]="imgSrc" *ngIf="imgSrc">
+  </div>
 
+  <div>
+    <ion-button expand="block" (click)="actionSheets()">actionSheets</ion-button>
+  </div>
+  <div>
+    <ion-button expand="block" (click)="faios()">指纹</ion-button>
+  </div>
 
-  asdfsadf
+  {{returnData}}
 
 </ion-content>

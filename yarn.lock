@@ -256,9 +256,44 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@ionic-native/action-sheet@^5.0.0-beta.24":
+  version "5.0.0-beta.24"
+  resolved "https://registry.yarnpkg.com/@ionic-native/action-sheet/-/action-sheet-5.0.0-beta.24.tgz#d0d32187ea5fd4196ac925f7c3c0174126859364"
+  integrity sha512-6RfKZQU1Jxg7RP22IwAXWyGdiON9iQvIyTMjAFlqYwbr2GUwt/el4J5a9FEDMB9RbF5reiJTuSivt5BFjIQTzA==
+  dependencies:
+    "@types/cordova" latest
+
+"@ionic-native/android-exoplayer@^5.0.0-beta.24":
+  version "5.0.0-beta.24"
+  resolved "https://registry.yarnpkg.com/@ionic-native/android-exoplayer/-/android-exoplayer-5.0.0-beta.24.tgz#48aed002b82a37c4c75b1c11c431af84adcbd70c"
+  integrity sha512-gWpaogqFKQomOf2Ed6BLScqmxDnmt3WMnAWeQtP+dpHmfG+/HjwlG+XgjyUmKfcXIb1uCcmm4boC3te/grxIEg==
+  dependencies:
+    "@types/cordova" latest
+
+"@ionic-native/android-fingerprint-auth@^5.0.0-beta.24":
+  version "5.0.0-beta.24"
+  resolved "https://registry.yarnpkg.com/@ionic-native/android-fingerprint-auth/-/android-fingerprint-auth-5.0.0-beta.24.tgz#ac5977603a03ef93ab918e8d408346e228319c32"
+  integrity sha512-oRRON2Ui3aO2PfKXBI3hQ886Bl54GAMknP/Lt09k0FwOmu3AbcooTuclvnv2PYVWHJLzds4O2XeIVibSjnS9+g==
+  dependencies:
+    "@types/cordova" latest
+
+"@ionic-native/camera@^5.0.0-beta.24":
+  version "5.0.0-beta.24"
+  resolved "https://registry.yarnpkg.com/@ionic-native/camera/-/camera-5.0.0-beta.24.tgz#265a4b8a06a790de1e98f07e87206a99ea99392d"
+  integrity sha512-gYjT2ckFLU4y0jO8wjzW8lmo/i1Dz0qlqQmGXTMByg34+3QG9YLlVW55CQ417DalZ4aTH8Q40Rpa7EFrB9iiiQ==
+  dependencies:
+    "@types/cordova" latest
+
 "@ionic-native/core@5.0.0-beta.21":
   version "5.0.0-beta.21"
   resolved "http://registry.npm.taobao.org/@ionic-native/core/download/@ionic-native/core-5.0.0-beta.21.tgz#45f8a3cc0803ae321566f320e42381697ab4271c"
+  dependencies:
+    "@types/cordova" latest
+
+"@ionic-native/fingerprint-aio@^5.0.0-beta.24":
+  version "5.0.0-beta.24"
+  resolved "https://registry.yarnpkg.com/@ionic-native/fingerprint-aio/-/fingerprint-aio-5.0.0-beta.24.tgz#05660c8f4f8e8cdbbf88a185837060c000987b4c"
+  integrity sha512-ujW9deiW2ugC0Bzq/Fctx+3iBdaI4j9uUVTqp2RKzFwyxOv5cMGii7ESXwS87znXY6Nr2CFldlSsYo49TL8rgw==
   dependencies:
     "@types/cordova" latest
 
@@ -1551,6 +1586,11 @@ copy-webpack-plugin@4.5.4:
     minimatch "^3.0.4"
     p-limit "^1.0.0"
     serialize-javascript "^1.4.0"
+
+cordova-plugin-camera@4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-camera/-/cordova-plugin-camera-4.0.3.tgz#7373a5938318c86ccfd84e3713e2382d10fe076b"
+  integrity sha1-c3Olk4MYyGzP2E43E+I4LRD+B2s=
 
 core-js@^2.2.0, core-js@^2.4.0, core-js@^2.5.4:
   version "2.6.1"
