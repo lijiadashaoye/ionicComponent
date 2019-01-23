@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 import { ActionSheet, ActionSheetOptions } from '@ionic-native/action-sheet/ngx';
-import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
-
+import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
   selector: 'app-native',
@@ -11,11 +10,11 @@ import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
 })
 export class NativeComponent {
   imgSrc: any
-  returnData=null
+  returnData = null
   constructor(
     private camera: Camera,
     private actionSheet: ActionSheet,
-    private faio: FingerprintAIO
+    private statusBar: StatusBar
   ) { }
 
   cameraFn() {
@@ -48,21 +47,28 @@ export class NativeComponent {
       destructiveButtonLast: true
     }
     this.actionSheet.show(options).then((buttonIndex: number) => {
-      this.returnData=buttonIndex
+      this.returnData = buttonIndex
     });
   }
 
-  faios(){
-    this.faio.show({
-      clientId: 'Fingerprint-Demo',
-      clientSecret: 'password', //Only necessary for Android
-      disableBackup:true,  //Only for Android(optional)
-      localizedFallbackTitle: 'Use Pin', //Only for iOS
-      localizedReason: 'Please authenticate' //Only for iOS
-  })
-  .then((result: any) => {
-    this.returnData=result
-  })
-  .catch((error: any) => this.returnData=error);
+  overlays1() {
+    this.statusBar.overlaysWebView(true);
   }
+  overlays2() {
+    this.statusBar.overlaysWebView(false);
+  }
+  ByHexString() {
+    this.statusBar.backgroundColorByHexString('#d40a0a');
+  }
+  ByName() {
+    this.statusBar.backgroundColorByName('yellow');
+  }
+  hides(can) {
+    if (!can) {
+      this.statusBar.hide();
+    } else {
+      this.statusBar.show();
+    }
+  }
+
 }

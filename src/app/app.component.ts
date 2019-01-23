@@ -109,8 +109,8 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      this.statusBar.styleDefault(); // 使用默认状态栏（深色文本，浅色背景）
+      this.splashScreen.hide();  // 显示和隐藏启动画面
     });
   }
 

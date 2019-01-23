@@ -6,8 +6,6 @@ import { NativeComponent } from './native.component';
 
 import { Camera } from '@ionic-native/camera/ngx';
 import { ActionSheet } from '@ionic-native/action-sheet/ngx';
-import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
-
 
 @NgModule({
   declarations: [
@@ -21,9 +19,8 @@ import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
   providers: [
     Camera,
     ActionSheet,
-    FingerprintAIO
+    
   ]
 })
 export class NativeModule { }
-
 

@@ -18,9 +18,19 @@
     <ion-button expand="block" (click)="actionSheets()">actionSheets</ion-button>
   </div>
   <div>
-    <ion-button expand="block" (click)="faios()">指纹</ion-button>
+    <ion-button (click)="overlays1()">overlays true</ion-button>
+    <ion-button (click)="overlays2()">overlays false</ion-button>
+  </div>
+  <div>
+    <ion-button (click)="ByHexString()">ByHexString</ion-button>
+    <ion-button (click)="ByName()">ByName</ion-button>
+  </div>
+  <div>
+    <ion-button (click)="hides(true)">显示</ion-button>
+    <ion-button (click)="hides(false)">隐藏</ion-button>
   </div>
 
-  {{returnData}}
+
+  {{returnData|json}}
 
 </ion-content>
