@@ -64,10 +64,10 @@ export class NativeComponent {
     this.statusBar.backgroundColorByName('yellow');
   }
   hides(can) {
-    if (!can) {
-      this.statusBar.hide();
-    } else {
+    if (can) {
       this.statusBar.show();
+    } else {
+      this.statusBar.hide();
     }
   }
 
