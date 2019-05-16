@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
 
 @Component({
   selector: 'app-datetime',
@@ -14,13 +17,25 @@ export class DatetimeComponent implements OnInit {
   cancel = '取消'
   done = '确定'
   monthValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-  dayValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]   // 设置待选的日期
+  dayValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] // 设置待选的日期
 
-  constructor() { }
-
-  ngOnInit() {
+  customPickerOptions = {
+    buttons: [{
+      text: '保存1',
+      handler: () => console.log('Clicked Save!')
+    }, {
+      text: '取消0',
+      handler: () => {
+        console.log('Clicked Log. Do not Dismiss.');
+        return false;
+      }
+    }]
   }
-  ionChanges(e) {    // 获取数据
+
+  constructor() {}
+
+  ngOnInit() {}
+  ionChanges(e) { // 获取数据
     console.log(e.detail)
   }
 

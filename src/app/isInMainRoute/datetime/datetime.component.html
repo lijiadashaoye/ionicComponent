@@ -46,8 +46,6 @@
     <ion-label>使用完全定制化</ion-label>
     <ion-datetime 
     (ionChange)="ionChanges($event)"
-
-    [pickerOptions]="customPickerOptions"
     [cancelText]='cancel'
     [doneText]='done'
     [min]="minValue"
@@ -55,10 +53,26 @@
     [dayValues]='dayValue'
     [monthValues]='monthValue'
     [placeholder]='placeholderText'
+    [displayFormat]='displayFormats'
+    ></ion-datetime>
+  </ion-item>
 
+  <ion-item>
+    <ion-label>使用完全定制化2</ion-label>
+    <ion-datetime 
+    (ionChange)="ionChanges($event)"
+
+    [pickerOptions]="customPickerOptions"
+
+    [min]="minValue"
+    [max]="maxValue"
+    [dayValues]='dayValue'
+    [monthValues]='monthValue'
+    [placeholder]='placeholderText'
     [displayFormat]='displayFormats'
 
     ></ion-datetime>
+
   </ion-item>
 
 </ion-content>
