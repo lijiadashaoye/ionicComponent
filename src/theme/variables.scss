@@ -75,3 +75,21 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+
+.ion-color-reds {
+  --ion-color-base: red;
+  --ion-color-base-rgb: red;
+  --ion-color-contrast: #fff; // 字体颜色
+  --ion-color-contrast-rgb: 255 255 255;
+  --ion-color-shade: red;
+  --ion-color-tint: red;
+}
+
+.ion-color-pinks {
+  --ion-color-base: pink;
+  --ion-color-base-rgb: pink;
+  --ion-color-contrast: #000;
+  --ion-color-contrast-rgb: 0 0 0;
+  --ion-color-shade: pink;
+  --ion-color-tint: pink;
+}
