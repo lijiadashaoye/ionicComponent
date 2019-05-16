@@ -18,10 +18,11 @@
 
   <h3>{{datas}}</h3>
 
+
+  <h2>搜索框</h2>
   <ion-text>
     type 类型："email","number","password","search","tel","text","url"
   </ion-text>
-  <h2>搜索框</h2>
   <ion-searchbar animated='true' showCancelButton type="text" spellcheck="false" cancelButtonText="搜索"
     placeholder="placeholder" searchIcon='search' color="success" value="" debounce="500" autocorrect="on"
     (ionCancel)="ionCancels($event)" (ionChange)="ionChanges($event)" (ionBlur)="ionBlurs($event)"></ion-searchbar>
