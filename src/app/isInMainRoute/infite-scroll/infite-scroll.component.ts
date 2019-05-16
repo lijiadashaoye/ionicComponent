@@ -17,7 +17,7 @@ export class InfiteScrollComponent {
   loadData(event) {
     setTimeout(() => {
       this.data = this.data.concat(this.data2)
-      event.target.complete();
+      event.target.complete();  // 必须加上
       if (this.data.length == 15) { // 禁用
         event.target.disabled = true;
       }
