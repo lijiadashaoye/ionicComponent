@@ -16,6 +16,7 @@ import { SideSwipeComponent } from './isInMainRoute/side-swipe/side-swipe.compon
 import { ModalComponent } from './isInMainRoute/modal/modal.component';
 import { NavComponent } from './isInMainRoute/nav_propver/nav.component';
 import { RefreshComponent } from './isInMainRoute/refresh/refresh.component';
+import { SlideComponent } from './isInMainRoute/slide/slide.component';
 
 let arr1 = [
   {
@@ -30,6 +31,10 @@ let arr1 = [
   {
     path: 'alert',
     component: AlertComponent
+  },
+  {
+    path: 'slide',
+    component: SlideComponent
   },
   {
     path: 'some-component',

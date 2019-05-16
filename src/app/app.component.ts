@@ -32,6 +32,11 @@ export class AppComponent {
       icon: 'star'
     },
     {
+      title: 'slide',
+      url: '/slide',
+      icon: 'star'
+    },
+    {
       title: 'checkBox',
       url: '/check-box',
       icon: 'star'

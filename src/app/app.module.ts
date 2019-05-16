@@ -28,6 +28,7 @@ import { Page1Component } from './isInMainRoute/nav_propver/page1/page1.componen
 import { Page2Component } from './isInMainRoute/nav_propver/page2/page2.component';
 import { Page3Component } from './isInMainRoute/nav_propver/page3/page3.component';
 import { RefreshComponent } from './isInMainRoute/refresh/refresh.component';
+import { SlideComponent } from './isInMainRoute/slide/slide.component';
 
 const obj1 = [
   AlertComponent,
@@ -55,6 +56,7 @@ const obj1 = [
   declarations: [
     AppComponent,
     ...obj1,
+    SlideComponent,
   ],
   entryComponents: [
     ModalChildComponent,
