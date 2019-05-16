@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
 
 @Component({
   selector: 'app-refresh',
@@ -29,14 +32,14 @@ export class RefreshComponent {
   selectChanges(mul) {
     // multiple:["bacon", "olives", "xcheese"]
 
-    console.log(mul.value)    
+    console.log(mul.value)
   }
 
   // 下拉刷新
   doRefresh(event) {
     setTimeout(() => {
       this.datas = '已经更新'
-      event.target.complete();
+      event.target.complete(); // 告诉框架去更新数据
     }, 2000);
   }
 
