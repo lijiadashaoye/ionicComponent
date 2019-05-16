@@ -10,17 +10,12 @@
 </ion-header>
 
 <ion-content>
- <ul>
-   <li *ngFor="let da of data">{{da}}</li>
- </ul>
+  <ul>
+    <li *ngFor="let da of data">{{da}}</li>
+  </ul>
 
-  <ion-infinite-scroll
-   threshold="10%"
-   position="bottom"
-    (ionInfinite)="loadData($event)">
-    <ion-infinite-scroll-content 
-    loadingSpinner="lines-small" 
-    loadingText="加载中...">
+  <ion-infinite-scroll threshold="10%" position="bottom" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="lines-small" loadingText="加载中...">
     </ion-infinite-scroll-content>
   </ion-infinite-scroll>
 </ion-content>
