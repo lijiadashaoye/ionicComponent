@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
 
 @Component({
   selector: 'app-some-component',
@@ -6,21 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./some-component.component.scss']
 })
 export class SomeComponentComponent implements OnInit {
-  backButtonText = '8989'
+  backButtonText = '自定义路由跳转'
   backButtonIcon = 'add'
-  backButtonColor = 'warning'
+  backButtonColor = 'danger'
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
   DefaultClick() {
     console.log(9)
   }
   maodian(tag: HTMLElement) {
     tag.scrollIntoView();
   }
-  ionscroll(e) {   // 监听滚动事件数据
+  ionscroll(e) { // 监听滚动事件数据
     // console.log(e.detail)  
   }
   toBottom(tar) {
