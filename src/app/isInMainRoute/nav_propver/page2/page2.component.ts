@@ -17,7 +17,7 @@ export class Page2Component {
   }
 
   goBack1() {
-    this.NavCont.goBack()
+    this.NavCont.back()
   }
 
   goBack2() {
