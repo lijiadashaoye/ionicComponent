@@ -23,4 +23,7 @@ export class Lazy1Component implements OnInit {
   testRoute2() {
     this.route.navigate(['route/lazy1/lazy1_child2'])
   }
+  testRoute3() {
+    this.route.navigate(['inputs'])
+  }
 }

@@ -259,28 +259,12 @@
 "@ionic-native/action-sheet@^5.0.0-beta.24":
   version "5.0.0-beta.24"
   resolved "https://registry.yarnpkg.com/@ionic-native/action-sheet/-/action-sheet-5.0.0-beta.24.tgz#d0d32187ea5fd4196ac925f7c3c0174126859364"
-  integrity sha512-6RfKZQU1Jxg7RP22IwAXWyGdiON9iQvIyTMjAFlqYwbr2GUwt/el4J5a9FEDMB9RbF5reiJTuSivt5BFjIQTzA==
-  dependencies:
-    "@types/cordova" latest
-
-"@ionic-native/android-exoplayer@^5.0.0-beta.24":
-  version "5.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/@ionic-native/android-exoplayer/-/android-exoplayer-5.0.0-beta.24.tgz#48aed002b82a37c4c75b1c11c431af84adcbd70c"
-  integrity sha512-gWpaogqFKQomOf2Ed6BLScqmxDnmt3WMnAWeQtP+dpHmfG+/HjwlG+XgjyUmKfcXIb1uCcmm4boC3te/grxIEg==
-  dependencies:
-    "@types/cordova" latest
-
-"@ionic-native/android-fingerprint-auth@^5.0.0-beta.24":
-  version "5.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/@ionic-native/android-fingerprint-auth/-/android-fingerprint-auth-5.0.0-beta.24.tgz#ac5977603a03ef93ab918e8d408346e228319c32"
-  integrity sha512-oRRON2Ui3aO2PfKXBI3hQ886Bl54GAMknP/Lt09k0FwOmu3AbcooTuclvnv2PYVWHJLzds4O2XeIVibSjnS9+g==
   dependencies:
     "@types/cordova" latest
 
 "@ionic-native/camera@^5.0.0-beta.24":
   version "5.0.0-beta.24"
   resolved "https://registry.yarnpkg.com/@ionic-native/camera/-/camera-5.0.0-beta.24.tgz#265a4b8a06a790de1e98f07e87206a99ea99392d"
-  integrity sha512-gYjT2ckFLU4y0jO8wjzW8lmo/i1Dz0qlqQmGXTMByg34+3QG9YLlVW55CQ417DalZ4aTH8Q40Rpa7EFrB9iiiQ==
   dependencies:
     "@types/cordova" latest
 
@@ -290,22 +274,15 @@
   dependencies:
     "@types/cordova" latest
 
-"@ionic-native/fingerprint-aio@^5.0.0-beta.24":
-  version "5.0.0-beta.24"
-  resolved "https://registry.yarnpkg.com/@ionic-native/fingerprint-aio/-/fingerprint-aio-5.0.0-beta.24.tgz#05660c8f4f8e8cdbbf88a185837060c000987b4c"
-  integrity sha512-ujW9deiW2ugC0Bzq/Fctx+3iBdaI4j9uUVTqp2RKzFwyxOv5cMGii7ESXwS87znXY6Nr2CFldlSsYo49TL8rgw==
-  dependencies:
-    "@types/cordova" latest
-
 "@ionic-native/splash-screen@5.0.0-beta.21":
   version "5.0.0-beta.21"
   resolved "http://registry.npm.taobao.org/@ionic-native/splash-screen/download/@ionic-native/splash-screen-5.0.0-beta.21.tgz#4cd961351e6cd60320ece1ecfd83d629b00d234d"
   dependencies:
     "@types/cordova" latest
 
-"@ionic-native/status-bar@5.0.0-beta.21":
-  version "5.0.0-beta.21"
-  resolved "http://registry.npm.taobao.org/@ionic-native/status-bar/download/@ionic-native/status-bar-5.0.0-beta.21.tgz#496b1172fb43a919af2825f0167d27048e62f7fd"
+"@ionic-native/status-bar@^5.0.0-beta.24":
+  version "5.5.1"
+  resolved "https://registry.npm.taobao.org/@ionic-native/status-bar/download/@ionic-native/status-bar-5.5.1.tgz#f53cbe67661346fa3f0a65551d4762d5fec639a0"
   dependencies:
     "@types/cordova" latest
 
@@ -317,18 +294,18 @@
     tslib "^1.9.0"
     typescript "~3.1.0"
 
-"@ionic/angular@4.0.0-rc.0":
-  version "4.0.0-rc.0"
-  resolved "http://registry.npm.taobao.org/@ionic/angular/download/@ionic/angular-4.0.0-rc.0.tgz#94aaa6a40fc90dd238a08d61facfa8b0bc9da8ea"
+"@ionic/angular@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.npm.taobao.org/@ionic/angular/download/@ionic/angular-4.4.0.tgz#f6102ee32fa4a40cff81168845ac95d888f571be"
   dependencies:
-    "@ionic/core" "4.0.0-rc.0"
+    "@ionic/core" "4.4.0"
     tslib "^1.9.3"
 
-"@ionic/core@4.0.0-rc.0":
-  version "4.0.0-rc.0"
-  resolved "http://registry.npm.taobao.org/@ionic/core/download/@ionic/core-4.0.0-rc.0.tgz#ac2392220ccdce21c7177458aa8a0fdf61868b50"
+"@ionic/core@4.4.0", "@ionic/core@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.npm.taobao.org/@ionic/core/download/@ionic/core-4.4.0.tgz#250dbd85000558416b34317cadcc365aefb818c0"
   dependencies:
-    ionicons "4.5.1"
+    ionicons "4.5.6"
 
 "@ngtools/webpack@7.1.4":
   version "7.1.4"
@@ -1590,7 +1567,10 @@ copy-webpack-plugin@4.5.4:
 cordova-plugin-camera@4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/cordova-plugin-camera/-/cordova-plugin-camera-4.0.3.tgz#7373a5938318c86ccfd84e3713e2382d10fe076b"
-  integrity sha1-c3Olk4MYyGzP2E43E+I4LRD+B2s=
+
+cordova-plugin-statusbar@2.4.2:
+  version "2.4.2"
+  resolved "https://registry.npm.taobao.org/cordova-plugin-statusbar/download/cordova-plugin-statusbar-2.4.2.tgz#fc1fbdc0d8d7033a7e8e1f1f7ff167ac9bd4faf6"
 
 core-js@^2.2.0, core-js@^2.4.0, core-js@^2.5.4:
   version "2.6.1"
@@ -3023,9 +3003,9 @@ invert-kv@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/invert-kv/download/invert-kv-2.0.0.tgz#7393f5afa59ec9ff5f67a27620d11c226e3eec02"
 
-ionicons@4.5.1:
-  version "4.5.1"
-  resolved "http://registry.npm.taobao.org/ionicons/download/ionicons-4.5.1.tgz#a180e8948256e6337c2d290eb07f9113dc7b09eb"
+ionicons@4.5.6:
+  version "4.5.6"
+  resolved "https://registry.npm.taobao.org/ionicons/download/ionicons-4.5.6.tgz#f3b5d2446e7e1b30e67ddcd1fc563271acc60f3c"
 
 ip-regex@^2.1.0:
   version "2.1.0"

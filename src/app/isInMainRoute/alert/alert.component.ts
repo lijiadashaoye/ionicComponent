@@ -1,5 +1,11 @@
-import { Component } from '@angular/core';
-import { AlertController } from '@ionic/angular';
+import {
+  Component
+} from '@angular/core';
+import {
+  AlertController
+} from '@ionic/angular';
+
+import 'hammerjs';
 
 @Component({
   selector: 'app-alert',
@@ -7,7 +13,17 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./alert.component.scss']
 })
 export class AlertComponent {
-  constructor(public alertController: AlertController) { }
+
+  actions = '';
+  constructor(public alertController: AlertController) {}
+
+
+  doPress() {
+    this.actions = 'press'
+  }
+  doTap() {
+    this.actions = 'tap'
+  }
 
   async base() {
     const alert = await this.alertController.create({
@@ -49,54 +65,52 @@ export class AlertComponent {
     return await alert.present();
   }
 
-  async  presentAlertNoMessage() {
+  async presentAlertNoMessage() {
     const alert = await this.alertController.create({
       header: 'Alert',
       buttons: ['OK']
     });
     return await alert.present();
   }
-  async  presentAlertConfirm() {
+  async presentAlertConfirm() {
     const alert = await this.alertController.create({
       header: 'Confirm!',
       message: 'Message <strong>text</strong>!!!',
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: () => {
-            console.log('Confirm Cancel: blah');
-          }
-        }, {
-          text: 'Ok',
-          handler: () => {
-            console.log('Confirm Ok')
-          }
+      buttons: [{
+        text: 'Cancel',
+        role: 'cancel',
+        cssClass: 'secondary',
+        handler: () => {
+          console.log('Confirm Cancel: blah');
         }
-      ]
+      }, {
+        text: 'Ok',
+        handler: () => {
+          console.log('Confirm Ok')
+        }
+      }]
     });
     return await alert.present();
   }
-  async  presentAlertPrompt() {
+  async presentAlertPrompt() {
 
     const alert = await this.alertController.create({
       header: 'Prompt!',
       inputs: [
 
-      // type?: TextFieldTypes | 'checkbox' | 'radio';
-      // name?: string;
-      // placeholder?: string;
-      // value?: any;
-      // label?: string;
-      // checked?: boolean;
-      // disabled?: boolean;
-      // id?: string;
-      // handler?: (input: AlertInput) => void;
-      // min?: string | number;
-      // max?: string | number;
+        // type?: TextFieldTypes | 'checkbox' | 'radio';
+        // name?: string;
+        // placeholder?: string;
+        // value?: any;
+        // label?: string;
+        // checked?: boolean;
+        // disabled?: boolean;
+        // id?: string;
+        // handler?: (input: AlertInput) => void;
+        // min?: string | number;
+        // max?: string | number;
         {
-          label:'3423423',
+          label: '3423423',
           placeholder: 'Placeholder 13',
         },
         {
@@ -134,29 +148,26 @@ export class AlertComponent {
           type: 'number'
         }
       ],
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: () => {
-            
-          }
-        }, {
-          text: 'Ok',
-          handler: (data) => {
-            console.log(data)
-          }
+      buttons: [{
+        text: 'Cancel',
+        role: 'cancel',
+        cssClass: 'secondary',
+        handler: () => {
+
         }
-      ]
+      }, {
+        text: 'Ok',
+        handler: (data) => {
+          console.log(data)
+        }
+      }]
     });
     return await alert.present();
   }
-  async  presentAlertRadio() {
+  async presentAlertRadio() {
     const alert = await this.alertController.create({
       header: 'Radio',
-      inputs: [
-        {
+      inputs: [{
           type: 'radio',
           label: 'Radio 1',
           name: 'Radio 1',
@@ -176,30 +187,27 @@ export class AlertComponent {
           value: 4
         }
       ],
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: () => {
-            console.log('Confirm Cancel')
-          }
-        }, {
-          text: 'Ok',
-          handler: (data) => {  // 返回上边的value
-            console.log(data)
-          }
+      buttons: [{
+        text: 'Cancel',
+        role: 'cancel',
+        cssClass: 'secondary',
+        handler: () => {
+          console.log('Confirm Cancel')
         }
-      ]
+      }, {
+        text: 'Ok',
+        handler: (data) => { // 返回上边的value
+          console.log(data)
+        }
+      }]
     });
     return await alert.present();
   }
-  async  presentAlertCheckbox() {
+  async presentAlertCheckbox() {
 
     const alert = await this.alertController.create({
       header: 'Checkbox',
-      inputs: [
-        {
+      inputs: [{
           type: 'checkbox',
           label: 'Checkbox 1',
           name: 'Checkbox 1',
@@ -219,26 +227,24 @@ export class AlertComponent {
           value: 'value3'
         }
       ],
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: () => {
-            console.log('Confirm Cancel')
-          }
-        }, {
-          text: 'Ok',
-          handler: (data) => {
-            console.log(data)  // ["value1", "value2"]
-            console.log('Confirm Ok')
-          }
+      buttons: [{
+        text: 'Cancel',
+        role: 'cancel',
+        cssClass: 'secondary',
+        handler: () => {
+          console.log('Confirm Cancel')
         }
-      ]
+      }, {
+        text: 'Ok',
+        handler: (data) => {
+          console.log(data) // ["value1", "value2"]
+          console.log('Confirm Ok')
+        }
+      }]
     });
     return await alert.present();
   }
-  async  presentWithCssClass() {
+  async presentWithCssClass() {
 
     const alert = await this.alertController.create({
       header: 'Alert',

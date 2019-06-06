@@ -1,0 +1,25 @@
+<ion-header class="setHeader">
+  <ion-toolbar>
+    <ion-title>
+      slide 轮播
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides pager="false" [options]="slideOpts" (ionSlideTouchEnd)="ionSlideTouchEnd($event)"
+    (ionSlideTap)="ionSlideTap($event)">
+    <ion-slide>
+      <h1>Slide 1</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+
+  {{kkk}}
+</ion-content>

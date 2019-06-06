@@ -11,20 +11,21 @@
 
 <ion-content>
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
-    <ion-refresher-content pullingIcon="arrow-down" pullingText="下拉刷新" pullMin='10' PULLMAX='40' refreshingSpinner="crescent"
-      refreshingText="加载中...">
+    <ion-refresher-content pullingIcon="arrow-down" pullingText="下拉刷新" pullMin='10' PULLMAX='40'
+      refreshingSpinner="crescent" refreshingText="加载中...">
     </ion-refresher-content>
   </ion-refresher>
 
   <h3>{{datas}}</h3>
 
+
+  <h2>搜索框</h2>
   <ion-text>
     type 类型："email","number","password","search","tel","text","url"
   </ion-text>
-  <h2>搜索框</h2>
-  <ion-searchbar animated='true' showCancelButton type="text" spellcheck="false" cancelButtonText="搜索" placeholder="placeholder"
-    searchIcon='search' color="success" value="" debounce="500" autocorrect="on" (ionCancel)="ionCancels($event)"
-    (ionChange)="ionChanges($event)" (ionBlur)="ionBlurs($event)"></ion-searchbar>
+  <ion-searchbar animated='true' showCancelButton type="text" spellcheck="false" cancelButtonText="搜索"
+    placeholder="placeholder" searchIcon='search' color="success" value="" debounce="500" autocorrect="on"
+    (ionCancel)="ionCancels($event)" (ionChange)="ionChanges($event)" (ionBlur)="ionBlurs($event)"></ion-searchbar>
 
   <h2>添加事件的选项条</h2>
   <ion-segment (ionChange)="segmentChanged($event)" color="danger">
@@ -193,10 +194,8 @@
 
     <ion-item>
       <ion-label>Alert</ion-label>
-      <ion-select  #mul2 (ionChange)="selectChanges(mul2)"
-      interface="alert" 
-      [interfaceOptions]='customAlertOptions'
-      multiple="true" placeholder="Select One">
+      <ion-select #mul2 (ionChange)="selectChanges(mul2)" interface="alert" [interfaceOptions]='customAlertOptions'
+        multiple="true" placeholder="Select One">
         <ion-select-option value="bacon">Bacon</ion-select-option>
         <ion-select-option value="olives">Black Olives</ion-select-option>
         <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
@@ -212,10 +211,8 @@
 
     <ion-item>
       <ion-label>Popover</ion-label>
-      <ion-select interface="popover" 
-      #mul3 (ionChange)="selectChanges(mul3)"
-      [interfaceOptions]='customPopoverOptions' 
-      placeholder="Select One">
+      <ion-select interface="popover" #mul3 (ionChange)="selectChanges(mul3)" [interfaceOptions]='customPopoverOptions'
+        placeholder="Select One">
         <ion-select-option value="brown">Brown</ion-select-option>
         <ion-select-option value="blonde">Blonde</ion-select-option>
         <ion-select-option value="black">Black</ion-select-option>
@@ -225,10 +222,8 @@
 
     <ion-item>
       <ion-label>Action Sheet</ion-label>
-      <ion-select 
-      [interfaceOptions]='customActionSheetOptions'
-      #mul4 (ionChange)="selectChanges(mul4)"
-      interface="action-sheet" placeholder="Select One">
+      <ion-select [interfaceOptions]='customActionSheetOptions' #mul4 (ionChange)="selectChanges(mul4)"
+        interface="action-sheet" placeholder="Select One">
         <ion-select-option value="red">Red</ion-select-option>
         <ion-select-option value="purple">Purple</ion-select-option>
         <ion-select-option value="yellow">Yellow</ion-select-option>
