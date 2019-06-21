@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
 
 @Component({
   selector: 'app-check-box',
@@ -6,20 +9,47 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./check-box.component.scss']
 })
 export class CheckBoxComponent implements OnInit {
-  public form = [
-    { val: 'Pepperoni', isChecked: true },
-    { val: 'Sausage', isChecked: false },
-    { val: 'Mushroom', isChecked: false },
-    { val: 'Pepperoni', isChecked: true },
-    { val: 'Sausage', isChecked: false },
-    { val: 'Pepperoni', isChecked: true },
-    { val: 'Sausage', isChecked: false },
-    { val: 'Pepperoni', isChecked: true },
-    { val: 'Sausage', isChecked: false },
+  public form = [{
+      val: 'Pepperoni',
+      isChecked: true
+    },
+    {
+      val: 'Sausage',
+      isChecked: false
+    },
+    {
+      val: 'Mushroom',
+      isChecked: false
+    },
+    {
+      val: 'Pepperoni',
+      isChecked: true
+    },
+    {
+      val: 'Sausage',
+      isChecked: false
+    },
+    {
+      val: 'Pepperoni',
+      isChecked: true
+    },
+    {
+      val: 'Sausage',
+      isChecked: false
+    },
+    {
+      val: 'Pepperoni',
+      isChecked: true
+    },
+    {
+      val: 'Sausage',
+      isChecked: false
+    },
   ];
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+  ionscroll(event) {
+    // console.log(event)
   }
-
 }
